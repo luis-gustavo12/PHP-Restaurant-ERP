@@ -1,0 +1,48 @@
+
+
+
+Tabela
+
+items: os itens que vao aparecer na tela principal
+
+    id
+    item_name: Nome do item
+    description: descricao do item
+    category: categoria. vai ser um inteiro, e o que cada inteiro significa, vai ser parametrizado
+    status: talvez util no futuro? e.g.: vendido, vencido, etc
+    insert_date: data que foi inserido
+    price:
+    second_description: sub descricao, algo do tipo, "serve 1 pessoa"
+
+
+
+Users: usuarios
+
+    id
+    job_title: funcao
+    pwd
+    user_name
+    level: nivel onde ele se encontra.
+    email: corporativo ou mesmo o pessoal
+    
+
+
+Images: imagens dos items. Futuramente pode vir a ser de outras coisas, por isso sera criado uma categoria pra eles
+
+    id
+    item_id
+    category
+    upload_date
+    description
+
+
+
+
+
+************************
+
+
+Pasta /dev sera onde estarao as funcoes/modulos proprios
+
+
+************************

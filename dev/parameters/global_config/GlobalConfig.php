@@ -1,0 +1,18 @@
+<?php
+
+
+
+class GlobalConfig {
+
+
+    //$jsonStr
+
+
+
+}
+
+
+
+
+
+
