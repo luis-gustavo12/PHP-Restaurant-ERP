@@ -6,7 +6,7 @@
     
 
 @php
-    echo "Session name: " . Session::get('name');
+    echo "Hello : " . Session::get('name');
 
     
     
@@ -20,6 +20,8 @@
 <div class="info">
     <header>
         <p>Number of items: @php echo count($items)@endphp </p>
+        <a class="anchor-button" href="{{route('manager.items.add')}}">Items</a>
+        <!-- <a href="">Users</a> -->
         <button class="button">Settings</button>
     </header>
 </div>
@@ -27,7 +29,7 @@
 
 <nav>
 
-    I'm nav
+    Go away
     
 </nav>
 

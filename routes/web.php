@@ -23,7 +23,7 @@ Auth::routes();
 // Every part of the system management, will come here
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect()->route('login');
 });
 
 
@@ -43,6 +43,16 @@ Route::get('/manager/items/add', [ItemsController::class, 'create'])->name('mana
 // Item post handling
 Route::post('/manager/items/add', [ItemsController::class, 'store'] )->name('items.store')->middleware('auth');
 
+
+
+
+
 // Login
-Route::get('/manager/login', [AuthController::class,'login'])->name('login');
+
+
+Route::get('/manager/login' , [AuthController::class,'login'])->name('login');
+Route::get('login', function() {
+    return redirect()->route('login');
+});
+
 Route::post('/manager/login', [AuthController::class,'postLogin'])->name('login.validate');

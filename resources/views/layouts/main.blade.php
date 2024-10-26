@@ -39,6 +39,11 @@
             background-color: #0056b3;
         }
 
+        .anchor-button {
+            display: inline-block; /* Makes the link beahve as a block element*/
+            padding: 10px 20px;  /*Adds space inside the button*/
+        }
+
         @yield('additional_css')
 
         @yield('local_script')

@@ -11,6 +11,14 @@ class AuthController extends Controller
     
     public function login(Request $request) {
 
+        
+        if (Auth::check()) {
+
+            return redirect()->route("manager");
+
+        }
+
+
         return view("auth.login");
 
     }
