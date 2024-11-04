@@ -38,6 +38,8 @@ Route::get('/manager', [ManagerController::class, 'index'])->name('manager')->mi
 // Display Items
 Route::get('/manager/items', [ItemsController::class, 'index'])->name('manager.items')->middleware('auth');
 
+Route::get('/manager/edit', [ItemsController::class, 'edit'])->name('manager.items.edit')->middleware('auth');
+
 // Item addition form
 Route::get('/manager/items/add', [ItemsController::class, 'create'])->name('manager.items.add')->middleware('auth');
 // Item post handling

@@ -40,8 +40,17 @@
         }
 
         .anchor-button {
-            display: inline-block; /* Makes the link beahve as a block element*/
-            padding: 10px 20px;  /*Adds space inside the button*/
+            display: inline-block; /* Makes the link behave like a block element */
+            padding: 10px 20px; /* Adds space inside the button */
+            background-color: #007bff; /* Button background color */
+            color: white; /* Text color */
+            text-align: center; /* Centers the text */
+            text-decoration: none; /* Removes underline from the link */
+            border: none; /* Removes default border */
+            border-radius: 5px; /* Rounds the corners */
+            font-size: 16px; /* Font size */
+            cursor: pointer; /* Changes cursor to pointer on hover */
+            transition: background-color 0.3s; /* Smooth transition for hover effect */
         }
 
         @yield('additional_css')
